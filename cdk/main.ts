@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-
-const cdk = require('aws-cdk-lib')
-const { ApiStack } = require('./constructs/api-stack')
+import * as cdk from 'aws-cdk-lib';
+import * as apistack from './constructs/api-stack';
 
 const app = new cdk.App()
-new ApiStack(app, 'ApiStack')
+new apistack.ApiStack(app, 'ApiStack')
