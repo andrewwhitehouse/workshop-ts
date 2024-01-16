@@ -8,7 +8,7 @@ export class ApiStack extends cdk.Stack {
    * @param {string} id
    * @param {StackProps} props
    */
-  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+  constructor(scope: cdk.App, id: string, props?: cdk.StageProps) {
     super(scope, id, props);
 
     const lambdaFunction = new lambda.Function(this, 'HandlerFunction', {
